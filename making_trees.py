@@ -84,4 +84,4 @@ root.insert(2)
 root.insert(3)
 
 traverse = Traversals()
-print(traverse.inorder_traversal_iterative(root))
+print(traverse.inorder_traversal(root))
