@@ -43,10 +43,38 @@ class Traversals:
                 stack.append(current)
                 current = current.left 
             current = stack.pop()
-            result.append(current)
+            result.append(current.value)
             current = current.right
+        return result
 
+    def postorder_traversal_iterative(self,root):
+        stack = [root]
+        result = []
 
+        while stack:
+            current = stack.pop()
+            result.append(current)
+
+            if current.left:
+                stack.append(current.left)
+
+            if current.right:
+                stack.append(current.right)
+        return result
+    def preorder_traversal_iterative(self,root):
+        stack = [root]
+        result = []
+
+        while stack:
+            current = stack.pop()
+            result.append(current.value)
+            
+            if current.right:
+                stack.append(current.right)
+
+            if current.left:
+                stack.append(current.left)
+        return result
 root = Tree(12)
 root.insert(5)
 root.insert(15)
@@ -56,4 +84,4 @@ root.insert(2)
 root.insert(3)
 
 traverse = Traversals()
-print(traverse.inorder_traversal(root))
+print(traverse.inorder_traversal_iterative(root))
