@@ -60,7 +60,7 @@ class Traversals:
 
             if current.right:
                 stack.append(current.right)
-        return result
+        return result[::-1]
     def preorder_traversal_iterative(self,root):
         stack = [root]
         result = []
