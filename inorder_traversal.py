@@ -3,12 +3,6 @@ Leetcode - 94 - inorder Traversal
 Problem link : https://leetcode.com/problems/binary-tree-inorder-traversal/?envType=problem-list-v2&envId=tree
 '''
 
-
-
-
-
-
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
