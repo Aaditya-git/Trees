@@ -75,6 +75,7 @@ class Traversals:
             if current.left:
                 stack.append(current.left)
         return result
+    
 root = Tree(12)
 root.insert(5)
 root.insert(15)
