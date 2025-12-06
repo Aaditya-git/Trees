@@ -71,18 +71,17 @@ class Traversals:
             
             if current.right:
                 stack.append(current.right)
-
-            if current.left:
+    
                 stack.append(current.left)
         return result
     
-root = Tree(1)
-root.insert(2)
-root.insert(2)
+root = Tree(2)
+root.insert(1)
 root.insert(3)
-root.insert(4)
-root.insert(4)
-root.insert(3)
+# root.insert(3)
+# root.insert(4)
+# root.insert(4)
+# root.insert(3)
 
 traverse = Traversals()
 print(traverse.inorder_traversal(root))
